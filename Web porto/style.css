@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #6D6552; /* warna background utama */
+  color: #4C2F27;      /* warna teks utama */
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+/* Full Screen Section */
+.full-screen {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+  animation: zoomIn 10s ease-in-out infinite alternate;
+}
+
+/* Overlay Content */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: fadeIn 1s ease forwards;
+}
+
+.overlay h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #4CAF50;
+  animation: slideUp 0.6s ease forwards;
+}
+
+.overlay button {
+  background: #4CAF50;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1em;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.overlay button:hover {
+  transform: scale(1.07);
+  background: #45a049;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Main Page */
+.hidden {
+  display: none;
+}
+
+main {
+  padding: 3em 2em;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+nav {
+  background: #4C2F27;
+  padding: 10px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+nav a {
+  margin: 0 15px;
+  color: #4C2F27;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #6D6552;
+  text-decoration: underline;
+}
+
+section {
+  padding: 60px 0;
+}
+
+h2 {
+  color: #4CAF50;
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+
+/* Project Card Hover Reveal */
+.project-card .project-extra {
+  display: none !important;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.project-card:hover .project-extra {
+  display: block !important;
+  opacity: 1;
+}
+
+/* Optional: smooth transition for appearance */
+.project-card {
+  transition: box-shadow 0.3s;
+  background: #fff;
+  color: #4C2F27;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 24px rgba(76, 175, 80, 0.15);
+}
+
+button, a, .card {
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+.body-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(20, 20, 20, 0.4); /* lebih transparan */
+  backdrop-filter: blur(8px); /* blur */
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Animasi masuk dari kiri dan kanan */
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: all 0.8s cubic-bezier(.77,0,.175,1) 
+}
+
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: all 0.8s cubic-bezier(.77,0,.175,1) 
+}
+.slide-up {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease-in-out;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Saat muncul di viewport */
+.fade-in-left.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+.fade-in-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+.slide-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.hero-photo-bg {
+  width: 300px;
+  height: 400px;
+  background: #6D6552;
+  border-radius: 50% / 45%;
+  border: 6px solid #fff;
+  overflow: hidden; /* pastikan ini ada */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+
+.hero-photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0; /* jangan oval di sini, cukup di parent */
+}
+/*Lenguage & Frameworks*/
+.badge-anim {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.badge-anim.show {
+  opacity: 1;
+  transform: translateY(0);
+}

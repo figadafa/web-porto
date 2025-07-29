@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Figa Daffa</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="Script.js" defer></script>
+</head>
+<style>
+  .fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+<body>
+ <section id="education" class="fade-in py-20 px-6 md:px-20 bg-[#f3f3f3]">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-10">
+    
+    <!-- Bagian Teks -->
+    <div class="flex-1">
+      <h1 class="text-6xl font-semibold mb-6 text-black slide-up text-center">Education Timeline</h1>
+      <ul class="space-y-6">
+        <li class="relative pl-8">
+          <span class="absolute left-0 top-0 w-6 h-6 bg-[#4C2F27] rounded-full"></span>
+          <span class="font-bold text-white fade-in">Universitas Muhammadiyah Malang - Computer Science</span>
+          <span class="block text-black fade-in">2024 - Present</span>
+        </li>
+        <li class="relative pl-8">
+          <span class="absolute left-0 top-0 w-6 h-6 bg-[#4C2F27] rounded-full"></span>
+          <span class="font-bold text-white fade-in">SMA Negeri 1 Plemahan Kabupaten Kediri - Science Major</span>
+          <span class="block text-black fade-in">2018 - 2021</span>
+        </li>
+      </ul>
+    </div>
+
+    
+
+  </div>
+</section>
+
+      <div class="px-6 md:px-20 mt-4">
+  <a href="index.html" class="fixed top-4 left-4 z-50 flex items-center bg-white text-black px-4 py-2 rounded shadow-md hover:bg-opacity-80 transition fade-in-right">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+  </svg>
+  Home
+</a>
+
+  </section>
+
+ <section id="experience" class="fade-in py-20 px-6 md:px-20 bg-white reveal-section">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-10">
+    
+    <!-- Bagian Teks -->
+    <div class="flex-1">
+      <h1 class="text-6xl font-semibold mb-6 text-yellow-900">Experience</h1>
+       <div class="w-32 h-2 bg-gray-400 mb-6 rounded fade-in-left"></div>
+      <h2 class="text-3xl font-semibold mb-6 text-black">Informatics Student Association (HMIF)</h2>
+      <ul class="space-y-4">
+        <li>
+          <span class="font-bold text-gray-700">
+            Junior Staff (Mar 2025 – May 2025), Senior Staff (May 2025 – Present)
+            Universitas Muhammadiyah Malang
+          </span>
+          <span class="block text-black fade-in-left">• Assisted in organizing Informatics Championship, a campus-wide event</span>
+          <span class="block text-black fade-in-left">• Appointed as Presidium during the organizational general meeting</span>
+          <span class="block text-black fade-in-left">• Participated in Informatics Industrial Visit to learn industry practices</span>
+          <span class="block text-black fade-in-left">• Attended Basic Leadership and Organizational Management Training (DKMO)</span>
+          <span class="block text-black fade-in-left">• Supported the organization of the Department Anniversary (Dies Natalis) event</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Bagian Foto -->
+    <div class="flex-1 flex justify-center md:justify-end">
+      <div class="relative flex flex-col items-center gap-4">
+        <img src="Foto 6.jpg" alt="Foto 1" class="w-72 h-96 object-cover rounded-lg shadow-lg slide-up">
+        <div class="flex gap-4">
+          <img src="Foto 7.jpg" alt="Foto 2" class="w-40 h-40 object-cover rounded-lg shadow-md fade-in-right">
+          <img src="Foto 5.jpg" alt="Foto 3" class="w-44 h-60 object-cover rounded-lg shadow-md fade-in-right">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+ 
+
+<!--Language & Expertise-->
+ <section id="skills" class="py-20 px-6 md:px-20">
+  <div class="max-w-4xl mx-auto text-center">
+    <h1 class="text-6xl font-bold mb-6 text-black fade-in">Skills & Expertise</h1>
+    <p class="text-black mb-10 fade-in">Explore my technical skills across different domains.Click on any category to see the specific technologies and tools I work with.</p>
+
+    <!-- Cards -->
+   <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mb-10">
+  <div class="skill-card cursor-pointer p-6 rounded-lg shadow bg-white slide-up" data-skill="web">
+    <h3 class="font-bold">Web Development</h3>
+    <p class="text-sm text-gray-500">Modern Web Development</p>
+  </div>
+
+  <div class="skill-card cursor-pointer p-6 rounded-lg shadow bg-white slide-up" data-skill="programming">
+    <h3 class="font-bold">Programming</h3>
+    <p class="text-sm text-gray-500">Data Science,Junior Game Development</p>
+  </div>
+
+  <div class="skill-card cursor-pointer p-6 rounded-lg shadow bg-white slide-up" data-skill="tools">
+    <h3 class="font-bold">Cloud / Tools</h3>
+    <p class="text-sm text-gray-500">Cloud Computing</p>
+  </div>
+</div>
+
+
+    <!-- Languages & Frameworks -->
+    <h3 class="text-xl font-semibold mb-4">Languages & Frameworks</h3>
+    <div id="languages-container" class="flex flex-wrap gap-3 justify-center">
+      <!-- Akan diisi JS -->
+    </div>
+  </div>
+</section>
+
+  </div>
+
+    </div>
+  </section>
+</body>
+</html>
