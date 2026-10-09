@@ -1,212 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Figa Daffa | Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      scroll-behavior: smooth;
-     
-    }
-
-    .fade-up {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.6s ease-in-out;
-    }
-
-    .fade-up.show {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
 </head>
-
-<body class="text-gray-800">
-  <div class="body-overlay"></div>
-  <div style="position: relative; z-index: 1;">
-    <!-- Hero Section -->
-    <section id="hero" class="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-20 bg-transparent">
-      <div class="flex-1 flex flex-col justify-center items-start">
-        <h2 class="text-2xl md:text-3xl font-semibold tracking-widest text-white mb-8 fade-in-left">FIGA DAFFA</h2>
-        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 text-gray-900 fade-in-left">Aspiring AI Engineer & Data Science</h1>
-        <p class="text-lg md:text-xl text-white mb-8 max-w-lg fade-in-left">
-          Hi! I’m Figa Daffa,An aspiring data science and software development with a background in computer science
-        </p>
-        <div class="flex gap-4">
-          <a href="Source/CV Daffa non Ats.pdf" class="bg-gray-700 text-white px-8 py-3 rounded-xl text-lg shadow hover:bg-gray-900 transition mt-4 ">Download CV</a>
-          <a href="#contact" class="bg-gray-700 text-white px-8 py-3 rounded-xl text-lg shadow hover:bg-black transition mt-4 ">Contact Me</a>
+<body>
+  <div class="body-overlay" aria-hidden="true"></div>
+  <div class="main-content-wrapper">
+    <main>
+      <section id="hero" class="hero-section">
+        <div class="hero-copy fade-in-left">
+          <p class="eyebrow">FIGA DAFFA</p>
+          <h1>BUILD. LEARN. REPEAT.</h1>
+          <p class="hero-intro"><strong>Informatics Student · Software Development · Data Science</strong></p>
+          <p class="hero-intro">I’m Figa Daffa, an Informatics student exploring software development and data science. I learn by building, solve problems through experimentation, and believe progress comes from showing up and doing the work.</p>
+          <div class="hero-actions"><a href="Source/CV Daffa non Ats.pdf" class="button button-secondary">Download CV</a><a href="#contact" class="button button-primary">Get in Touch</a></div>
         </div>
-      </div>
-      <div class="flex-1 flex justify-center items-center mt-10 md:mt-0 fade-in-right">
-        <div class="hero-photo-bg">
-          <img src="Images/Foto 3.jpg" alt="Figa Daffa" class="hero-photo-img fade-in-right" />
+        <div class="hero-visual fade-in-right"><div class="hero-photo-bg"><img src="Images/IMG_5576.JPG" alt="Portrait of Figa Daffa" class="hero-photo-img" /></div></div>
+      </section>
+
+      <section id="about" class="section section-light">
+        <div class="content-grid about-grid">
+          <div class="fade-in-left"><p class="section-kicker">01 / PROFILE</p><h2>Built Through the Process.</h2><div class="accent-line"></div><p class="lead">I’m an Informatics student at Universitas Muhammadiyah Malang with interests in software development, data science, and technology-driven problem solving. Beyond coding, I’ve been involved in student organizations and event coordination—experiences that have taught me to work with people, take responsibility, and keep learning through challenges.</p></div>
+          <div class="fade-in-right"><img src="Images/Foto 4.jpg" alt="Figa Daffa during a personal project" class="about-photo" /></div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- About Me Section -->
-    <section id="about" class="py-20 px-6 md:px-20 bg-[#f3f3f3]">
-      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-        <!-- Teks About Me -->
-        <div class="flex-1 fade-in-left">
-          <h2 class="text-6xl font-extrabold mb-6 text-black">About <span class="text-black">Me</span></h2>
-          <div class="w-32 h-2 bg-gray-400 mb-6 rounded"></div>
-          <p class="text-2xl text-white mb-8">
-            I'm a tech enthusiast with a strong interest in software development and data science. I enjoy building things that are useful and meaningful, especially those that involve people and impact. Currently based in Indonesia. I'm always open to learning opportunities and collaborative projects.
-          </p>
-          <!-- Tombol See More -->
-          <button id="seeMore" class="bg-gray-700 text-white px-6 py-2 rounded-xl text-lg shadow hover:bg-black transition mt-4">
-            See More
-          </button>
+      <section id="experience" class="section experience-section">
+        <div class="experience-preview">
+          <div class="experience-copy">
+            <p class="section-kicker">02 / IN PRACTICE</p>
+            <h2>Experience</h2>
+            <p class="experience-period">HMIF · Fungsionaris Himpunan</p>
+            <h3>Ketua Bidang Akademik <span>/ Head of Academic Division</span></h3>
+            <p class="experience-organization">Himpunan Mahasiswa Informatika (HMIF)<br />Universitas Muhammadiyah Malang</p>
+            <p>Coordinated academic initiatives and contributed to the planning and development of academic programs within the student association.</p>
+            <a href="about.html" class="button button-primary experience-link">Explore My Story</a>
+          </div>
+          <figure class="experience-preview-image fade-in-right">
+            <img src="Images/IMG-20260127-WA0005.jpg" alt="Figa Daffa explaining the Academic Division's work" />
+            <figcaption>Academic Division briefing</figcaption>
+          </figure>
         </div>
-        <!-- Foto About Me -->
-        <div class="flex-1 flex justify-center fade-in-right">
-          <img src="Images/Foto 4.jpg" alt="Figa Daffa About Me" class="w-[500px] h-[400px] object-cover rounded-3xl shadow-lg border-4 border-gray-200" />
-        </div>
-      </div>
-    </section>
+      </section>
 
-   
+      <section id="projects" class="section"><div class="narrow-content"><p class="section-kicker">03 / SELECTED WORK</p><h2>Projects</h2><div class="project-list">
+        <article class="project-card fade-up"><h3>Smart Shopping List App</h3><p>A shopping list system built using Java and JavaFX, applying object-oriented principles.</p><p class="project-extra"><strong>Tech Used:</strong> Java, JavaFX<br /><strong>Role:</strong> Full Stack Developer</p><a class="project-link" href="https://github.com/figadafa/ShoppingListApp.git" target="_blank" rel="noopener">View Code</a></article>
+        <article class="project-card slide-up"><h3>Silupa (Sistem Lumbung Panen)</h3><p>A farm management system aimed to help local farmers record and monitor their harvest storage efficiently. The system supports transparency and traceability in the agricultural supply chain, especially for small-scale farming communities.</p><p class="project-extra"><strong>Tech Used:</strong> C++, File Handling (CSV)<br /><strong>Role:</strong> Backend Developer</p><a class="project-link" href="https://github.com/ricoagista/SiLuPa.git" target="_blank" rel="noopener">View Code</a></article>
+        <article class="project-card fade-up"><h3>Academic Stress Detection via Tweet Analysis</h3><p>A research project focused on identifying early signs of academic stress among university students through Indonesian tweets. The project utilizes NLP techniques for data crawling and preprocessing, and applies the Support Vector Machine (SVM) algorithm for classification.</p><p class="project-extra"><strong>Tech Used:</strong> Python, Jupyter Notebook, Snscrape, Matplotlib, Seaborn<br /><strong>Role:</strong> Data Collection, Preprocessing, and SVM Model Developer</p><a class="project-link" href="https://github.com/figadafa/Data-Cleaning.git" target="_blank" rel="noopener">View Code</a></article>
+      </div></div></section>
 
-    <!-- Projects Section -->
-<section id="projects" class="py-20 px-6 md:px-20">
-  <div class="max-w-4xl mx-auto">
-    <h1 class="text-center text-7xl font-semibold mb-6 text-black">Projects</h1>
-    <div class="space-y-8">
-      
-      <!-- Project 1 -->
-      <div class="project-card p-6 rounded-lg shadow bg-white fade-up  group cursor-pointer ">
-        <h3 class="text-xl font-bold">Smart Shopping List App</h3>
-        <p class="mt-2">A shopping list system built using Java and JavaFX, applying object-oriented principles.</p>
-        <p class="project-extra"><strong>Tech Used:</strong> Java, JavaFX</p>
-        <p class="project-extra"><strong>Role:</strong> Full Stack Developer</p>
+      <section id="mini-projects" class="section section-light"><div class="content-grid mini-grid"><div><p class="section-kicker">04 / FIELD NOTES</p><h2>Mini Projects</h2><ul class="project-list-mini"><li>OOP Calculator (Java)</li><li>Lost and Found System (Java)</li><li>Library Management System (Java)</li><li>Inventory Management System (Java)</li><li>Sentence Character Counter (C++)</li><li>Store Inventory System (C++)</li><li>Students Record (C++)</li><li>Transaction Recording System (C++)</li></ul><a href="https://github.com/figadafa/college-mini-project.git" class="button button-secondary">View Code</a></div><div class="project-images"><img src="Images/Foto Project2.jpg" alt="Mini project documentation" /><img src="Images/Foto Project1.jpg" alt="Second mini project documentation" /></div></div></section>
 
-        <!-- Tombol muncul saat hover -->
-       <a href="https://github.com/figadafa/ShoppingListApp.git" target="_blank"
-         class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition bg-black text-white px-3 py-2 rounded-md flex items-center gap-2 text-sm">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-         <path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.29 3.438 9.774 8.207 11.387.6.112.793-.261.793-.58v-2.015c-3.338.726-4.042-1.61-4.042-1.61-.546-1.386-1.333-1.755-1.333-1.755-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.238 1.84 1.238 1.07 1.835 2.806 1.305 3.493.998.107-.775.419-1.305.762-1.606-2.665-.304-5.467-1.333-5.467-5.931 0-1.31.468-2.381 1.236-3.221-.124-.303-.536-1.527.118-3.183 0 0 1.008-.322 3.302 1.23a11.4 11.4 0 013.004-.404c1.019.005 2.047.137 3.004.404 2.294-1.552 3.3-1.23 3.3-1.23.656 1.656.244 2.88.12 3.183.77.84 1.235 1.911 1.235 3.221 0 4.61-2.805 5.624-5.476 5.921.43.371.815 1.103.815 2.222v3.293c0 .322.192.696.8.578C20.565 22.27 24 17.787 24 12.5 24 5.87 18.63.5 12 .5z"/>
-        </svg>
-        View Code
-       </a>
-</div>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="project-card p-6 rounded-lg shadow bg-white slide-up group cursor-pointer ">        
-        <h3 class="text-xl font-bold">Silupa (Sistem Lumbung Panen)</h3>
-        <p class="mt-2">A farm management system aimed to help local farmers record and monitor their harvest storage efficiently. The system supports transparency and traceability in the agricultural supply chain, especially for small-scale farming communities.</p>
-        <p class="project-extra"><strong>Tech Used:</strong> C++, File Handling (CSV)</p>
-        <p class="project-extra"><strong>Role:</strong> Backend Developer</p>
-         <!-- Tombol muncul saat hover -->
-       <a href="https://github.com/ricoagista/SiLuPa.git" target="_blank"
-         class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition bg-black text-white px-3 py-2 rounded-md flex items-center gap-2 text-sm">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-         <path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.29 3.438 9.774 8.207 11.387.6.112.793-.261.793-.58v-2.015c-3.338.726-4.042-1.61-4.042-1.61-.546-1.386-1.333-1.755-1.333-1.755-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.238 1.84 1.238 1.07 1.835 2.806 1.305 3.493.998.107-.775.419-1.305.762-1.606-2.665-.304-5.467-1.333-5.467-5.931 0-1.31.468-2.381 1.236-3.221-.124-.303-.536-1.527.118-3.183 0 0 1.008-.322 3.302 1.23a11.4 11.4 0 013.004-.404c1.019.005 2.047.137 3.004.404 2.294-1.552 3.3-1.23 3.3-1.23.656 1.656.244 2.88.12 3.183.77.84 1.235 1.911 1.235 3.221 0 4.61-2.805 5.624-5.476 5.921.43.371.815 1.103.815 2.222v3.293c0 .322.192.696.8.578C20.565 22.27 24 17.787 24 12.5 24 5.87 18.63.5 12 .5z"/>
-        </svg>
-        View Code
-       </a>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="project-card p-6 rounded-lg shadow bg-white fade-up  group cursor-pointer ">
-        <h3 class="text-xl font-bold">Academic Stress Detection via Tweet Analysis</h3>
-        <p class="mt-2">A research project focused on identifying early signs of academic stress among university students through Indonesian tweets. The project utilizes NLP techniques for data crawling and preprocessing, and applies the Support Vector Machine (SVM) algorithm for classification.</p>
-        <p class="project-extra"><strong>Tech Used:</strong> Python, Jupyter Notebook, Snscrape, Matplotlib, Seaborn</p>
-        <p class="project-extra"><strong>Role:</strong> Data Collection, Preprocessing, and SVM Model Developer</p>
-         <!-- Tombol muncul saat hover -->
-       <a href="https://github.com/figadafa/Data-Cleaning.git" target="_blank"
-         class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition bg-black text-white px-3 py-2 rounded-md flex items-center gap-2 text-sm">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-         <path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.29 3.438 9.774 8.207 11.387.6.112.793-.261.793-.58v-2.015c-3.338.726-4.042-1.61-4.042-1.61-.546-1.386-1.333-1.755-1.333-1.755-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.238 1.84 1.238 1.07 1.835 2.806 1.305 3.493.998.107-.775.419-1.305.762-1.606-2.665-.304-5.467-1.333-5.467-5.931 0-1.31.468-2.381 1.236-3.221-.124-.303-.536-1.527.118-3.183 0 0 1.008-.322 3.302 1.23a11.4 11.4 0 013.004-.404c1.019.005 2.047.137 3.004.404 2.294-1.552 3.3-1.23 3.3-1.23.656 1.656.244 2.88.12 3.183.77.84 1.235 1.911 1.235 3.221 0 4.61-2.805 5.624-5.476 5.921.43.371.815 1.103.815 2.222v3.293c0 .322.192.696.8.578C20.565 22.27 24 17.787 24 12.5 24 5.87 18.63.5 12 .5z"/>
-        </svg>
-        View Code
-       </a>
-      </div>
-</section>
-
-
-    <section id="mini-projects" class="py-20 px-6 md:px-20">
-  <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-10">
-    
-    <!-- Bagian Kiri (List + Button) -->
-    <div class="flex-1">
-      <h1 class="text-center text-7xl font-semibold mb-6 text-black">Mini Projects</h1>
-      <ul class="list-disc pl-6 space-y-3">
-        <li class="fade-in-left text-white">OOP Calculator (Java)</li>
-        <li class="fade-in-left text-white">Lost and Found System (Java)</li>
-        <li class="fade-in-left text-white">Library Management System (Java)</li>
-        <li class="fade-in-left text-white">Inventory Management System (Java)</li>
-        <li class="fade-in-left text-white">Sentence Character Counter (C++)</li>
-        <li class="fade-in-left text-white">Store Inventory System (C++)</li>
-        <li class="fade-in-left text-white">Students Record (C++)</li>
-        <li class="fade-in-left text-white">Transaction Recording System (C++)</li>
-      </ul>
-
-      <a href="https://github.com/figadafa/college-mini-project.git" class="inline-block mt-6 ml-6  bg-gray-800 text-white px-6 py-3 rounded-lg shadow hover:bg-gray-900">
-        View Code
-      </a>
-    </div>
-
-    <!-- Bagian Kanan (2 Foto) -->
-    <div class="flex flex-col gap-4 items-center">
-      <!-- Foto Besar (3:4) -->
-      <div class="w-48 h-64 bg-gray-300 rounded-xl overflow-hidden shadow-lg fade-up">
-        <img src="Images/Foto Project2.jpg" alt="Pemanis 1" class="w-full h-full object-cover fade-in-left" />
-      </div>
-
-      <!-- Foto Kecil (1:1) -->
-      <div class="w-32 h-32 bg-gray-300 rounded-xl overflow-hidden shadow-lg">
-        <img src="Images/Foto Project1.jpg" alt="Pemanis 2" class="w-full h-full object-cover fade-in-right" />
-      </div>
-    </div>
-
+      <section id="contact" class="section"><div class="narrow-content"><p class="section-kicker">05 / MAKE CONTACT</p><h2>Have Something in Mind?</h2><div class="accent-line"></div><p class="lead">Open to meaningful collaborations, new ideas, and opportunities to learn together.</p><a class="email-link" href="mailto:figabrilliantdafa1@gmail.com">figabrilliantdafa1@gmail.com</a><h3 class="follow-title">Follow Me</h3><div class="social-links"><a href="https://instagram.com/figadaffa" target="_blank" rel="noopener" aria-label="Instagram"><img src="Source/Instagram.svg" alt="Instagram" /></a><a href="https://github.com/figadafa" target="_blank" rel="noopener" aria-label="GitHub"><img src="Source/Github.svg" alt="GitHub" /></a><a href="https://linkedin.com/in/figabrilliantdaffa" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="Source/linkedin.svg" alt="LinkedIn" /></a></div></div></section>
+    </main>
   </div>
-</section>
-
-
-   <!-- Contact Section -->
-<section id="contact" class="py-20 px-6 md:px-20 bg-[#f3f3f3]">
-  <div class="max-w-4xl mx-auto">
-    <h2 class="text-6xl font-extrabold mb-6 text-black fade-in-left">
-      Let's <span class="text-black fade-in-left">Connect</span>
-    </h2>
-    <div class="w-32 h-2 bg-gray-400 mb-6 rounded fade-in-left"></div>
-
-    <p class="text-2xl text-white mb-8 fade-in-right">
-      Feel free to reach out for collaborations or just to say hi!
-    </p>
-    <a href="mailto:figabrilliantdafa1@gmail.com" class="text-blue-500 hover:underline">
-      figabrilliantdafa1@gmail.com
-    </a>
-
-    <div class="mt-8">
-      <h3 class="text-2xl font-semibold text-white mb-4">Follow Me</h3>
-      <div class="flex gap-6">
-        <a href="https://instagram.com/figadaffa" target="_blank" aria-label="Instagram">
-          <img src="Source/Instagram.svg" alt="Instagram" class="w-8 h-8 transform transition-transform duration-300 hover:scale-125 fade-up" />
-        </a>
-        <a href="https://github.com/figadafa" target="_blank" aria-label="GitHub">
-          <img src="Source/Github.svg" alt="GitHub" class="w-8 h-8 transform transition-transform duration-300 hover:scale-125 fade-up" />
-        </a>
-        <a href="https://linkedin.com/in/figabrilliantdaffa" target="_blank" aria-label="LinkedIn">
-          <img src="Source/linkedin.svg" alt="LinkedIn" class="w-8 h-8 transform transition-transform duration-300 hover:scale-125 fade-up" />
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
   <script src="Script.js"></script>
 </body>
-
 </html>

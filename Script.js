@@ -41,11 +41,12 @@ const container = document.getElementById("languages-container");
 const cards = document.querySelectorAll(".skill-card");
 
 function updateLanguages(skill) {
+  if (!container || !skillData[skill]) return;
   container.innerHTML = "";
   skillData[skill].forEach((lang, index) => {
     const badge = document.createElement("span");
     badge.className =
-      "px-4 py-2 bg-gray-100 rounded-full shadow text-gray-700 badge-anim";
+      "badge-anim";
     badge.textContent = lang;
     container.appendChild(badge);
 
